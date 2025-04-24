@@ -145,6 +145,7 @@
                 "Requester": "Requester of the build",
                 "Creator": "Creator of the workitem",
                 "ActivatedBy": "User who started the item",
+                "RequiredReviewer": "Required Reviewer of the work item",
                 "FixedUser": "Fixed user",
                 "Unassigned": "Unassign the workitem"
             }

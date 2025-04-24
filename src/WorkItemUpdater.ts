@@ -43,6 +43,11 @@ async function main(): Promise<void> {
                         tl.debug('Using workitem activator user "' + settings.assignedTo + '" as assignedTo.');
                         break;
                     }
+                    case 'RequiredReviewer': {
+                        settings.assignedTo = workItem.fields['Microsoft.VSTS.CMMI.RequiredAttendee1'];
+                        tl.debug('Using workitem required reviewer user "' + settings.assignedTo + '" as assignedTo.');
+                        break;
+                    }
                     case 'FixedUser': {
                         tl.debug('Using fixed user "' + settings.assignedTo + '" as assignedTo.');
                         break;
